@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+<div class="container p-4">
+    <div class="row">
+      <div class="col-md-6">
+        <br>
+        <br>
+        
+        <br>
+        <div class="card card-body">
+          <h1>Weather Status</h1>
+          <form (submit)="submitLocation(cityName, cityCode)">
+            <input type="text" placeholder="City Name" class="form-control" autofocus #cityName>
+            <input type="text" placeholder="Country Name" class="form-control" #cityCode>
+            <button class="btn btn-primary btn-block mt-2">
+              Get Weather
+            </button>
+          </form>
+        </div> 
+      </div>
+      <div class="col-md-6">
+        <br>
+        <br>
+        <div *ngIf="weather" class="card card-body text-center">
+          <h1 class="h4">Weather Information</h1>
+          <p>City: {{weather.name}}</p>
+          <p>Latitude: {{weather.coord.lat}}</p>
+          <p>Longitude: {{weather.coord.lon}}</p>
+          <p>Humidity: {{weather.main.humidity}}</p>
+          <p>Pressure: {{weather.main.pressure}}</p>
+          <p>Temperature: {{weather.main.temp}} °C</p>
+          <p>Description: {{weather.weather[0].description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>

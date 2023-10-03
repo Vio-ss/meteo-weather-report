@@ -1,0 +1,65 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "name": "Swetha",
+      "password": "1234@5678",
+      "email": "test@gmail.com",
+      "gender": "female",
+      "role": "admin",
+      "isactive": true,
+      "address": {
+        "area": "chennai"
+      }
+    },
+    {
+      "id": "Vionwi",
+      "name": "Viola",
+      "password": "Vaish123@",
+      "email": "test3@gmail.com",
+      "gender": "female",
+      "role": "tech",
+      "isactive": true
+    },
+    {
+      "id": "Alexi",
+      "name": "AlexIve",
+      "password": "Vaish123@",
+      "email": "test4@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    },
+    {
+      "id": "Xavryan",
+      "name": "Xav Ryan",
+      "password": "Vaish123@",
+      "email": "test5@gmail.com",
+      "gender": "male",
+      "role": "tech",
+      "isactive": false
+    },
+    {
+      "id": "Test 1",
+      "name": "Xav Ryan",
+      "password": "Ryan1234@",
+      "email": "test5@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    }
+  ],
+  "role": [
+    {
+      "code": "user",
+      "name": "User"
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "name": "rakhesh",
+      "Creditlimit": 1000
+    }
+  ]
+}
